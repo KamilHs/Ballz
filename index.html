@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            box-sizing: border-box;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .value {
+            position: absolute;
+            z-index: 1000;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .restart {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            padding: 12px;
+            color: white;
+            background-color: rgb(46, 5, 46);
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="scripts/ball.js"></script>
+    <script src="scripts/obstacle.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/sketch.js"></script>
+</body>
+
+</html>
